@@ -4,4 +4,4 @@ Genetic algorithm implementation, inspired by [this example](http://www.blprnt.c
 
 Uses processing.
 
-![SmartRockets](https://i.imgur.com/Mmyae38.gif)
+![SmartRockets](https://i.imgur.com/16E6SyS.gif)
