@@ -78,7 +78,6 @@ class Population
 
     void run (int timeScale)
     {
-
         for (int x = 0; x < timeScale; x++)
         {
 

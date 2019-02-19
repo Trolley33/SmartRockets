@@ -1,4 +1,5 @@
 Population p;
+boolean stopped = true;
 
 int timeScale;
 
@@ -12,17 +13,22 @@ void setup ()
 void draw ()
 {
     background(51);
-    p.run(timeScale);
+    if (!stopped)
+    {
+      p.run(timeScale); 
+    }
 }
 
 void keyPressed()
 {
-    if (timeScale > 1)
-    {
-        timeScale = 1;
-    }
-    else
-    {
-        timeScale = 3;
-    }
+  switch (key) {
+    case '=':
+      timeScale++;
+      break;
+    case '-':
+      timeScale = 1;
+      break;
+    case 's':
+      stopped = !stopped;
+  }
 }
